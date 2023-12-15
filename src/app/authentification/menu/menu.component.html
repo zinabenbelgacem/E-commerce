@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(87, 137, 247);">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="color: rgb(11, 63, 160);" href="#" routerLink="ecommerce"> Online Shop </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">              
+                <a class="nav-link " routerLink="products" href="products">Produits</a>
+                <a class="nav-link " routerLink="categories" href="categories">Categories</a>
+                <a class="nav-link " routerLink="scategories" href="scategories">Sous Categories</a>
+                
+            </div>            
+        </div>            
+        <div>
+            <span *ngIf="isConnected" style="color: rgb(11, 240, 11);">●</span> <!-- Point vert pour connecté -->
+            <span *ngIf="!isConnected" style="color: red;">●</span> <!-- Point rouge pour déconnecté -->
+            {{ userEmail }} 
+          </div>
+          </div>
+          <div>
+
+          </div>
+            <div>
+                <a class="nav-link" (click)="onLogout()" routerLink="/ecommerce" href="#">LogOut </a>
+              </div>
+    
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+ 
+</nav> 
+<router-outlet></router-outlet>

@@ -1,0 +1,33 @@
+<form (ngSubmit)="Ajoutuser()">
+  <h2>Registrer</h2>
+  <div class="mb-3">
+    <label for="email">Email:</label></div>
+    <input type="text" class="input-mini" id="email" name="email" placeholder="email" [(ngModel)]="user.email">
+ 
+  <div class="mb-3">
+    <label for="password">Password:</label></div>
+    <input type="password" class="input-mini" id="password" name="password" placeholder="password" [(ngModel)]="user.password">
+  
+  <div class="mb-3">
+    <label for="firstname">First Name:</label></div>
+    <input type="text" class="input-mini" id="firstname" name="firstname" placeholder="firstname" [(ngModel)]="user.firstname">
+
+  <div class="mb-3">
+    <label for="lastname">Last Name:</label></div>
+    <input type="text" class="input-mini"  id="lastname" name="lastname" placeholder="lastname" [(ngModel)]="user.lastname">
+
+  <div class="mb-3">
+    <label for="role">Role:</label></div>
+    <input type="text" class="input-mini"  id="role" name="role" placeholder="role" [(ngModel)]="user.role">
+ 
+  <div class="mb-3">
+    <label for="isActive">Is Active:</label></div>
+    <input type="text" class="input-mini"  id="isActive" name="isActive" placeholder="isActive" [(ngModel)]="user.isActive">
+
+  <div class="mb-3">
+    <label for="avatar">Avatar:</label><div></div>
+    <input type="text" class="input-mini"  id="avatar" name="avatar" placeholder="avatar" [(ngModel)]="user.avatar">
+  </div>
+  
+  <button type="submit" class="btn btn-success">Enregistrer</button>
+</form>

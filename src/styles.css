@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~filepond/dist/filepond.min.css";
+@import "~filepond/dist/filepond.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css";
+@import "~filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css";
+
+
+  .background-image {
+    background-image: url('assets/img/image1.jpg');
+    background-size: contain; /* Pour que l'image s'ajuste tout en restant visible */
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-mini {
+    font-size: 22px;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .image-container {
+    max-width: 100%; /* Ajustez la largeur selon vos préférences */
+  }
+  
+
+
+
